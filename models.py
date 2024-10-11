@@ -74,7 +74,7 @@ y_pred = scaler_y.inverse_transform(y_pred_scaled)
 y_test_inv = scaler_y.inverse_transform(y_test)
 
 # จำนวนปีที่ต้องการคาดการณ์
-n_years = int(input("Enter the number of years to predict: "))  # รับค่าจำนวนปีจากผู้ใช้
+n_years = 50 # รับค่าจำนวนปีจากผู้ใช้
 future_predictions = []
 
 # เริ่มจากข้อมูลล่าสุด
