@@ -11,7 +11,7 @@ get_ipython().system('pip install nbformat importnb')
 # In[9]:
 
 
-#import os
+import os
 from flask import Flask,request,jsonify
 from importnb import Notebook # ใช้ importnb เพื่อ models .ipynb
 
@@ -41,8 +41,8 @@ def predict():
     return jsonify(predictions)
 
 if __name__ == '__main__':
-    #port = int(os.environ.get('PORT', 5050))
-    app.run(debug=False) #, port=port
+    port = int(os.environ.get('PORT', 5050))
+    app.run(debug=False ,port=port)
 
 
 # In[ ]:
