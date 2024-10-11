@@ -1,23 +1,17 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[7]:
-
-
-get_ipython().system('pip install flask')
-get_ipython().system('pip install nbformat importnb')
-
-
 # In[9]:
 
 
 import os
 from flask import Flask,request,jsonify
-from importnb import Notebook # ใช้ importnb เพื่อ models .ipynb
+import models
+# from importnb import Notebook # ใช้ importnb เพื่อ models .ipynb
 
-# นำเข้า models.ipynb
-with Notebook():
-    import models  # ไฟล์ .ipynb จะถูก import โดยใช้ชื่อ model
+# # นำเข้า models.ipynb
+# with Notebook():
+#     import models  # ไฟล์ .ipynb จะถูก import โดยใช้ชื่อ model
 
 app = Flask(__name__)
 
