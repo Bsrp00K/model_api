@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[9]:
-
-
 import os
 from flask import Flask,request,jsonify
 import models
@@ -37,9 +31,6 @@ def predict():
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5050))
     app.run(debug=False ,port=port)
-
-
-# In[ ]:
 
 
 

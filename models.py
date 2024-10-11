@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[76]:
-
-
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
@@ -196,16 +190,8 @@ else:
    
 
 
-    
-
-
-# In[77]:
-
 
 print(future_predictions)
-
-
-# In[80]:
 
 
 def predict(n_years,initial_amount):
@@ -231,8 +217,6 @@ def predict(n_years,initial_amount):
     
     return result
 
-
-# In[ ]:
 
 
 
